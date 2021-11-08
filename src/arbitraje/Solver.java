@@ -22,6 +22,7 @@ public class Solver {
 				partidoActual.setArbitro(seleccionado);
 			}
 		}
+
 	}
 
 	private Arbitro asignarArbitro(Partido partido, Collection<Arbitro> arbitrosDisponibles) {

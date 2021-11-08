@@ -1,4 +1,4 @@
-package probando;
+package interfaz;
 
 import java.awt.EventQueue;
 
