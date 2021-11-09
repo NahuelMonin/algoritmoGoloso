@@ -7,13 +7,10 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextPane;
 
-import arbitraje.Arbitro;
-import arbitraje.Equipo;
-import arbitraje.FechaTorneo;
-import arbitraje.Instancia;
-import arbitraje.Partido;
-import arbitraje.Solver;
-import data.Lectura;
+
+import arbitraje.*;
+import data.*;
+
 
 import java.awt.Font;
 import java.io.FileNotFoundException;
@@ -26,13 +23,16 @@ import java.util.HashMap;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Toolkit;
+import java.awt.Color;
 
 public class Interfaz {
 	
 	private Instancia torneo;
-	private JFrame frame;
+	private JFrame frmSeleccinAutomatizadaDe;
 	private Lectura leerArchivo;
 	private Solver solucion;
+	
 	/**
 	 * Launch the application.
 	 */
@@ -41,7 +41,7 @@ public class Interfaz {
 			public void run() {
 				try {
 					Interfaz window = new Interfaz();
-					window.frame.setVisible(true);
+					window.frmSeleccinAutomatizadaDe.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -67,30 +67,36 @@ public class Interfaz {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		frame = new JFrame();
-		frame.setBounds(100, 100, 835, 667);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(null);
+		frmSeleccinAutomatizadaDe = new JFrame();
+		frmSeleccinAutomatizadaDe.setIconImage(Toolkit.getDefaultToolkit().getImage("src\\icono.png"));
+		frmSeleccinAutomatizadaDe.setResizable(false);
+		frmSeleccinAutomatizadaDe.setTitle("Selecci\u00F3n automatizada de \u00E1rbitros.");
+		frmSeleccinAutomatizadaDe.setBounds(100, 100, 835, 667);
+		frmSeleccinAutomatizadaDe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmSeleccinAutomatizadaDe.getContentPane().setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Calendario original");
+		lblNewLabel.setForeground(Color.BLACK);
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 12));
 		lblNewLabel.setBounds(60, 11, 125, 14);
-		frame.getContentPane().add(lblNewLabel);
+		frmSeleccinAutomatizadaDe.getContentPane().add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Asignacion de \u00E1rbitros");
+		lblNewLabel_1.setForeground(Color.BLACK);
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 12));
 		lblNewLabel_1.setBounds(317, 11, 149, 14);
-		frame.getContentPane().add(lblNewLabel_1);
+		frmSeleccinAutomatizadaDe.getContentPane().add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Asignacion de Nombres");
+		lblNewLabel_2.setForeground(Color.BLACK);
 		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 12));
 		lblNewLabel_2.setBounds(607, 11, 149, 14);
-		frame.getContentPane().add(lblNewLabel_2);
+		frmSeleccinAutomatizadaDe.getContentPane().add(lblNewLabel_2);
 		
 		JTextPane torneoOriginal = new JTextPane();
 		torneoOriginal.setEditable(false);
 		torneoOriginal.setBounds(10, 36, 240, 485);
-		frame.getContentPane().add(torneoOriginal);
+		frmSeleccinAutomatizadaDe.getContentPane().add(torneoOriginal);
 		leerArchivo = new Lectura ();
 		torneoOriginal.setText(leerArchivo.getCalendario());
 		
@@ -98,12 +104,12 @@ public class Interfaz {
 		JTextPane despuesDelAlgoritmo = new JTextPane();
 		despuesDelAlgoritmo.setEditable(false);
 		despuesDelAlgoritmo.setBounds(270, 36, 240, 485);
-		frame.getContentPane().add(despuesDelAlgoritmo);
+		frmSeleccinAutomatizadaDe.getContentPane().add(despuesDelAlgoritmo);
 		
 		JTextPane calendarioConNombres = new JTextPane();
 		calendarioConNombres.setEditable(false);
 		calendarioConNombres.setBounds(538, 36, 259, 485);
-		frame.getContentPane().add(calendarioConNombres);
+		frmSeleccinAutomatizadaDe.getContentPane().add(calendarioConNombres);
 		
 		JButton asignarArbitros = new JButton("Asignar \u00C1rbitros");
 		asignarArbitros.addActionListener(new ActionListener() {
@@ -115,7 +121,7 @@ public class Interfaz {
 			}
 		});
 		asignarArbitros.setBounds(340, 532, 133, 23);
-		frame.getContentPane().add(asignarArbitros);
+		frmSeleccinAutomatizadaDe.getContentPane().add(asignarArbitros);
 		
 		JButton btnNewButton_2 = new JButton("Asignar Apellidos");
 		btnNewButton_2.addActionListener(new ActionListener() {
@@ -128,7 +134,8 @@ public class Interfaz {
 			}
 		});
 		btnNewButton_2.setBounds(622, 532, 134, 23);
-		frame.getContentPane().add(btnNewButton_2);
+		frmSeleccinAutomatizadaDe.getContentPane().add(btnNewButton_2);
+		
 	}
 	
 	
