@@ -150,9 +150,9 @@ public class Interfaz {
 		equipos[5] = new Equipo("Huracan", 5);
 		
 		HashMap<Integer, Arbitro> arbitros = new HashMap<Integer, Arbitro>();
-		arbitros.put(0, new Arbitro(0,6));
-		arbitros.put(1, new Arbitro(1,6));
-		arbitros.put(2, new Arbitro(2,6));
+		arbitros.put(0, new Arbitro(1,6));
+		arbitros.put(1, new Arbitro(2,6));
+		arbitros.put(2, new Arbitro(3,6));
 		
 		ArrayList<Partido> partidosFecha1 = new ArrayList<Partido>();
 		partidosFecha1.add(new Partido(equipos[0], equipos[1]));

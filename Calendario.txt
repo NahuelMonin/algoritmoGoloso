@@ -1,8 +1,8 @@
 Cantidad de arbitros: 3
-0  1  2  
+1  2  3  
 =============================
 FECHA NUMERO: 1
-River Plate - Boca Jrs // 햞bitro: null
+Juanma Gato - Boca Jrs // 햞bitro: null
 Independiente - Racing // 햞bitro: null
 San Lorenzo - Huracan // 햞bitro: null
 

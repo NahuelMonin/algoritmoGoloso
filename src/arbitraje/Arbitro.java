@@ -21,6 +21,7 @@ public class Arbitro {
 		return equiposDirigidos.clone();
 	}
 	
+	//suma 1 en la posicion correspondiente al equipo que dirigio.
 	public void sumarEquipo (int index) {
 		this.equiposDirigidos[index]++;
 	}
@@ -33,11 +34,6 @@ public class Arbitro {
 		this.disponible = disponible;
 	}
 
-	@Override
-	public String toString() {
-		return "" + this.codigo + " " + apellido;
-	}
-
 	public String getApellido() {
 		return apellido;
 	}
@@ -46,4 +42,8 @@ public class Arbitro {
 		this.apellido = apellido;
 	}
 	
+	@Override
+	public String toString() {
+		return "" + this.codigo + " " + apellido;
+	}
 }

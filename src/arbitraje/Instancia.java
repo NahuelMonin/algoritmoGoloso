@@ -1,10 +1,11 @@
 package arbitraje;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 
-public class Instancia {
+public class Instancia implements Serializable{
 	
 	private ArrayList<FechaTorneo> fechasTorneo;
 	private HashMap<Integer, Arbitro> arbitros;
