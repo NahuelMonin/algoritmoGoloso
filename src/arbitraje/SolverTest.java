@@ -50,7 +50,7 @@ public class SolverTest {
 		Instancia torneo = crearEjemplo();
 		Solver solucion = new Solver(torneo);
 		solucion.asignarArbitros();
-		solucion.getInstancia().g
+		//solucion.getInstancia().g
 		
 	}
 
