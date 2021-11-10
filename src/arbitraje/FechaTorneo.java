@@ -11,7 +11,7 @@ public class FechaTorneo implements Serializable{
 	private int numFecha;
 	private ArrayList<Partido> partidos;
 		
-	public FechaTorneo(int numFecha, ArrayList<Partido> listaPartidos) {
+	public FechaTorneo(int numFecha, ArrayList <Partido> listaPartidos) {
 		this.numFecha = numFecha;
 		this.partidos = listaPartidos;
 	}

@@ -11,19 +11,6 @@
           "equipoB": {
             "nombre": "Boca Jrs",
             "codigo": 1
-          },
-          "arbitro": {
-            "codigo": 1,
-            "equiposDirigidos": [
-              2,
-              2,
-              0,
-              2,
-              2,
-              2
-            ],
-            "disponible": false,
-            "apellido": "Martinelli"
           }
         },
         {
@@ -34,19 +21,6 @@
           "equipoB": {
             "nombre": "Racing",
             "codigo": 3
-          },
-          "arbitro": {
-            "codigo": 2,
-            "equiposDirigidos": [
-              2,
-              1,
-              2,
-              2,
-              1,
-              2
-            ],
-            "disponible": false,
-            "apellido": "Monin"
           }
         },
         {
@@ -57,19 +31,6 @@
           "equipoB": {
             "nombre": "Huracan",
             "codigo": 5
-          },
-          "arbitro": {
-            "codigo": 3,
-            "equiposDirigidos": [
-              1,
-              2,
-              3,
-              1,
-              2,
-              1
-            ],
-            "disponible": false,
-            "apellido": "Caberera"
           }
         }
       ]
@@ -85,19 +46,6 @@
           "equipoB": {
             "nombre": "Independiente",
             "codigo": 2
-          },
-          "arbitro": {
-            "codigo": 3,
-            "equiposDirigidos": [
-              1,
-              2,
-              3,
-              1,
-              2,
-              1
-            ],
-            "disponible": false,
-            "apellido": "Caberera"
           }
         },
         {
@@ -108,19 +56,6 @@
           "equipoB": {
             "nombre": "Boca Jrs",
             "codigo": 1
-          },
-          "arbitro": {
-            "codigo": 2,
-            "equiposDirigidos": [
-              2,
-              1,
-              2,
-              2,
-              1,
-              2
-            ],
-            "disponible": false,
-            "apellido": "Monin"
           }
         },
         {
@@ -131,19 +66,6 @@
           "equipoB": {
             "nombre": "Racing",
             "codigo": 3
-          },
-          "arbitro": {
-            "codigo": 1,
-            "equiposDirigidos": [
-              2,
-              2,
-              0,
-              2,
-              2,
-              2
-            ],
-            "disponible": false,
-            "apellido": "Martinelli"
           }
         }
       ]
@@ -159,19 +81,6 @@
           "equipoB": {
             "nombre": "San Lorenzo",
             "codigo": 4
-          },
-          "arbitro": {
-            "codigo": 1,
-            "equiposDirigidos": [
-              2,
-              2,
-              0,
-              2,
-              2,
-              2
-            ],
-            "disponible": false,
-            "apellido": "Martinelli"
           }
         },
         {
@@ -182,19 +91,6 @@
           "equipoB": {
             "nombre": "Independiente",
             "codigo": 2
-          },
-          "arbitro": {
-            "codigo": 2,
-            "equiposDirigidos": [
-              2,
-              1,
-              2,
-              2,
-              1,
-              2
-            ],
-            "disponible": false,
-            "apellido": "Monin"
           }
         },
         {
@@ -205,19 +101,6 @@
           "equipoB": {
             "nombre": "Boca Jrs",
             "codigo": 1
-          },
-          "arbitro": {
-            "codigo": 3,
-            "equiposDirigidos": [
-              1,
-              2,
-              3,
-              1,
-              2,
-              1
-            ],
-            "disponible": false,
-            "apellido": "Caberera"
           }
         }
       ]
@@ -233,19 +116,6 @@
           "equipoB": {
             "nombre": "Huracan",
             "codigo": 5
-          },
-          "arbitro": {
-            "codigo": 2,
-            "equiposDirigidos": [
-              2,
-              1,
-              2,
-              2,
-              1,
-              2
-            ],
-            "disponible": false,
-            "apellido": "Monin"
           }
         },
         {
@@ -256,19 +126,6 @@
           "equipoB": {
             "nombre": "San Lorenzo",
             "codigo": 4
-          },
-          "arbitro": {
-            "codigo": 1,
-            "equiposDirigidos": [
-              2,
-              2,
-              0,
-              2,
-              2,
-              2
-            ],
-            "disponible": false,
-            "apellido": "Martinelli"
           }
         },
         {
@@ -279,19 +136,6 @@
           "equipoB": {
             "nombre": "Independiente",
             "codigo": 2
-          },
-          "arbitro": {
-            "codigo": 3,
-            "equiposDirigidos": [
-              1,
-              2,
-              3,
-              1,
-              2,
-              1
-            ],
-            "disponible": false,
-            "apellido": "Caberera"
           }
         }
       ]
@@ -307,19 +151,6 @@
           "equipoB": {
             "nombre": "Racing",
             "codigo": 3
-          },
-          "arbitro": {
-            "codigo": 2,
-            "equiposDirigidos": [
-              2,
-              1,
-              2,
-              2,
-              1,
-              2
-            ],
-            "disponible": false,
-            "apellido": "Monin"
           }
         },
         {
@@ -330,19 +161,6 @@
           "equipoB": {
             "nombre": "Huracan",
             "codigo": 5
-          },
-          "arbitro": {
-            "codigo": 1,
-            "equiposDirigidos": [
-              2,
-              2,
-              0,
-              2,
-              2,
-              2
-            ],
-            "disponible": false,
-            "apellido": "Martinelli"
           }
         },
         {
@@ -353,19 +171,6 @@
           "equipoB": {
             "nombre": "San Lorenzo",
             "codigo": 4
-          },
-          "arbitro": {
-            "codigo": 3,
-            "equiposDirigidos": [
-              1,
-              2,
-              3,
-              1,
-              2,
-              1
-            ],
-            "disponible": false,
-            "apellido": "Caberera"
           }
         }
       ]
@@ -375,41 +180,41 @@
     "0": {
       "codigo": 1,
       "equiposDirigidos": [
-        2,
-        2,
         0,
-        2,
-        2,
-        2
+        0,
+        0,
+        0,
+        0,
+        0
       ],
-      "disponible": false,
-      "apellido": "Martinelli"
+      "disponible": true,
+      "apellido": ""
     },
     "1": {
       "codigo": 2,
       "equiposDirigidos": [
-        2,
-        1,
-        2,
-        2,
-        1,
-        2
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
-      "disponible": false,
-      "apellido": "Monin"
+      "disponible": true,
+      "apellido": ""
     },
     "2": {
       "codigo": 3,
       "equiposDirigidos": [
-        1,
-        2,
-        3,
-        1,
-        2,
-        1
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
-      "disponible": false,
-      "apellido": "Caberera"
+      "disponible": true,
+      "apellido": ""
     }
   }
 }

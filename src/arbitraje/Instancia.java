@@ -56,7 +56,7 @@ public class Instancia implements Serializable{
 		return ret;
 	}
 	
-	
+
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();

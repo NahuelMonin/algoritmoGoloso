@@ -100,6 +100,11 @@ public class Interfaz {
 		calendarioConNombres.setBounds(538, 36, 259, 485);
 		frmSeleccinAutomatizadaDe.getContentPane().add(calendarioConNombres);
 		
+		//hasta qe no se realiza la asignacion de arbitros, no se habilita la consulta de apellidos
+		JButton solicitarApellidos = new JButton("Asignar Apellidos");
+		solicitarApellidos.setBounds(622, 532, 134, 23);
+		frmSeleccinAutomatizadaDe.getContentPane().add(solicitarApellidos);
+
 		JButton asignarArbitros = new JButton("Asignar \u00C1rbitros");
 		asignarArbitros.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -108,15 +113,22 @@ public class Interfaz {
 				solucion.getInstancia().generarJSON("torneo.JSON");
 				torneo = solucion.getInstancia();
 				despuesDelAlgoritmo.setText(Instancia.leerJSON("torneo.JSON").toString());
-				
+				//luego de realizar el algoritmo se habilita el boton para consultar los apellidos
+				habilitarSolicitudDeApellidos(calendarioConNombres, solicitarApellidos);
 			}
 		});
 		asignarArbitros.setBounds(340, 532, 133, 23);
 		frmSeleccinAutomatizadaDe.getContentPane().add(asignarArbitros);
 		
-		JButton btnNewButton_2 = new JButton("Asignar Apellidos");
-		btnNewButton_2.addActionListener(new ActionListener() {
+
+
+
+		
+	}
+	private void habilitarSolicitudDeApellidos(JTextPane calendarioConNombres, JButton solicitarApellidos) {
+		solicitarApellidos.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+
 				for (Arbitro arbitro : torneo.getArbitros()) {
 					arbitro.setApellido(JOptionPane.showInputDialog("Ingrese el nombre: "));
 				}
@@ -125,11 +137,7 @@ public class Interfaz {
 				
 			}
 		});
-		btnNewButton_2.setBounds(622, 532, 134, 23);
-		frmSeleccinAutomatizadaDe.getContentPane().add(btnNewButton_2);
-		
 	}
-	
 	public void crearTorneo () {
 		
 		Equipo [] equipos = new Equipo[6];
