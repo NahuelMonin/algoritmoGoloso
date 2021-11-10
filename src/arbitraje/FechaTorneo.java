@@ -1,10 +1,13 @@
 package arbitraje;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 
 
-public class FechaTorneo {
+public class FechaTorneo implements Serializable{
+
+	private static final long serialVersionUID = 1L;
 	private int numFecha;
 	private ArrayList<Partido> partidos;
 		

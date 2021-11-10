@@ -1,0 +1,415 @@
+{
+  "fechasTorneo": [
+    {
+      "numFecha": 1,
+      "partidos": [
+        {
+          "equipoA": {
+            "nombre": "River Plate",
+            "codigo": 0
+          },
+          "equipoB": {
+            "nombre": "Boca Jrs",
+            "codigo": 1
+          },
+          "arbitro": {
+            "codigo": 1,
+            "equiposDirigidos": [
+              2,
+              2,
+              0,
+              2,
+              2,
+              2
+            ],
+            "disponible": false,
+            "apellido": "Martinelli"
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "Independiente",
+            "codigo": 2
+          },
+          "equipoB": {
+            "nombre": "Racing",
+            "codigo": 3
+          },
+          "arbitro": {
+            "codigo": 2,
+            "equiposDirigidos": [
+              2,
+              1,
+              2,
+              2,
+              1,
+              2
+            ],
+            "disponible": false,
+            "apellido": "Monin"
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "San Lorenzo",
+            "codigo": 4
+          },
+          "equipoB": {
+            "nombre": "Huracan",
+            "codigo": 5
+          },
+          "arbitro": {
+            "codigo": 3,
+            "equiposDirigidos": [
+              1,
+              2,
+              3,
+              1,
+              2,
+              1
+            ],
+            "disponible": false,
+            "apellido": "Caberera"
+          }
+        }
+      ]
+    },
+    {
+      "numFecha": 2,
+      "partidos": [
+        {
+          "equipoA": {
+            "nombre": "River Plate",
+            "codigo": 0
+          },
+          "equipoB": {
+            "nombre": "Independiente",
+            "codigo": 2
+          },
+          "arbitro": {
+            "codigo": 3,
+            "equiposDirigidos": [
+              1,
+              2,
+              3,
+              1,
+              2,
+              1
+            ],
+            "disponible": false,
+            "apellido": "Caberera"
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "San Lorenzo",
+            "codigo": 4
+          },
+          "equipoB": {
+            "nombre": "Boca Jrs",
+            "codigo": 1
+          },
+          "arbitro": {
+            "codigo": 2,
+            "equiposDirigidos": [
+              2,
+              1,
+              2,
+              2,
+              1,
+              2
+            ],
+            "disponible": false,
+            "apellido": "Monin"
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "Huracan",
+            "codigo": 5
+          },
+          "equipoB": {
+            "nombre": "Racing",
+            "codigo": 3
+          },
+          "arbitro": {
+            "codigo": 1,
+            "equiposDirigidos": [
+              2,
+              2,
+              0,
+              2,
+              2,
+              2
+            ],
+            "disponible": false,
+            "apellido": "Martinelli"
+          }
+        }
+      ]
+    },
+    {
+      "numFecha": 3,
+      "partidos": [
+        {
+          "equipoA": {
+            "nombre": "River Plate",
+            "codigo": 0
+          },
+          "equipoB": {
+            "nombre": "San Lorenzo",
+            "codigo": 4
+          },
+          "arbitro": {
+            "codigo": 1,
+            "equiposDirigidos": [
+              2,
+              2,
+              0,
+              2,
+              2,
+              2
+            ],
+            "disponible": false,
+            "apellido": "Martinelli"
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "Huracan",
+            "codigo": 5
+          },
+          "equipoB": {
+            "nombre": "Independiente",
+            "codigo": 2
+          },
+          "arbitro": {
+            "codigo": 2,
+            "equiposDirigidos": [
+              2,
+              1,
+              2,
+              2,
+              1,
+              2
+            ],
+            "disponible": false,
+            "apellido": "Monin"
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "Racing",
+            "codigo": 3
+          },
+          "equipoB": {
+            "nombre": "Boca Jrs",
+            "codigo": 1
+          },
+          "arbitro": {
+            "codigo": 3,
+            "equiposDirigidos": [
+              1,
+              2,
+              3,
+              1,
+              2,
+              1
+            ],
+            "disponible": false,
+            "apellido": "Caberera"
+          }
+        }
+      ]
+    },
+    {
+      "numFecha": 4,
+      "partidos": [
+        {
+          "equipoA": {
+            "nombre": "River Plate",
+            "codigo": 0
+          },
+          "equipoB": {
+            "nombre": "Huracan",
+            "codigo": 5
+          },
+          "arbitro": {
+            "codigo": 2,
+            "equiposDirigidos": [
+              2,
+              1,
+              2,
+              2,
+              1,
+              2
+            ],
+            "disponible": false,
+            "apellido": "Monin"
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "Racing",
+            "codigo": 3
+          },
+          "equipoB": {
+            "nombre": "San Lorenzo",
+            "codigo": 4
+          },
+          "arbitro": {
+            "codigo": 1,
+            "equiposDirigidos": [
+              2,
+              2,
+              0,
+              2,
+              2,
+              2
+            ],
+            "disponible": false,
+            "apellido": "Martinelli"
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "Boca Jrs",
+            "codigo": 1
+          },
+          "equipoB": {
+            "nombre": "Independiente",
+            "codigo": 2
+          },
+          "arbitro": {
+            "codigo": 3,
+            "equiposDirigidos": [
+              1,
+              2,
+              3,
+              1,
+              2,
+              1
+            ],
+            "disponible": false,
+            "apellido": "Caberera"
+          }
+        }
+      ]
+    },
+    {
+      "numFecha": 5,
+      "partidos": [
+        {
+          "equipoA": {
+            "nombre": "River Plate",
+            "codigo": 0
+          },
+          "equipoB": {
+            "nombre": "Racing",
+            "codigo": 3
+          },
+          "arbitro": {
+            "codigo": 2,
+            "equiposDirigidos": [
+              2,
+              1,
+              2,
+              2,
+              1,
+              2
+            ],
+            "disponible": false,
+            "apellido": "Monin"
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "Boca Jrs",
+            "codigo": 1
+          },
+          "equipoB": {
+            "nombre": "Huracan",
+            "codigo": 5
+          },
+          "arbitro": {
+            "codigo": 1,
+            "equiposDirigidos": [
+              2,
+              2,
+              0,
+              2,
+              2,
+              2
+            ],
+            "disponible": false,
+            "apellido": "Martinelli"
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "Independiente",
+            "codigo": 2
+          },
+          "equipoB": {
+            "nombre": "San Lorenzo",
+            "codigo": 4
+          },
+          "arbitro": {
+            "codigo": 3,
+            "equiposDirigidos": [
+              1,
+              2,
+              3,
+              1,
+              2,
+              1
+            ],
+            "disponible": false,
+            "apellido": "Caberera"
+          }
+        }
+      ]
+    }
+  ],
+  "arbitros": {
+    "0": {
+      "codigo": 1,
+      "equiposDirigidos": [
+        2,
+        2,
+        0,
+        2,
+        2,
+        2
+      ],
+      "disponible": false,
+      "apellido": "Martinelli"
+    },
+    "1": {
+      "codigo": 2,
+      "equiposDirigidos": [
+        2,
+        1,
+        2,
+        2,
+        1,
+        2
+      ],
+      "disponible": false,
+      "apellido": "Monin"
+    },
+    "2": {
+      "codigo": 3,
+      "equiposDirigidos": [
+        1,
+        2,
+        3,
+        1,
+        2,
+        1
+      ],
+      "disponible": false,
+      "apellido": "Caberera"
+    }
+  }
+}
