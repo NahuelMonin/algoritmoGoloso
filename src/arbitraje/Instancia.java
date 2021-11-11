@@ -1,11 +1,10 @@
 package arbitraje;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 
-public class Instancia implements Serializable{
+public class Instancia {
 	
 	private ArrayList<FechaTorneo> fechasTorneo;
 	private HashMap<Integer, Arbitro> arbitros;
@@ -21,6 +20,10 @@ public class Instancia implements Serializable{
 	
 	public Collection<Arbitro> getArbitros() {
 		return arbitros.values();
+	}
+	
+	public Arbitro getArbitroNumero(int key) {
+		return this.arbitros.get(key);
 	}
 	
 	@Override
