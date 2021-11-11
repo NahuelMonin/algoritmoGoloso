@@ -1,11 +1,18 @@
 package arbitraje;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
-public class Instancia {
-	
+public class Instancia implements Serializable{
+
+	private static final long serialVersionUID = 1L;
 	private ArrayList<FechaTorneo> fechasTorneo;
 	private HashMap<Integer, Arbitro> arbitros;
 	
@@ -21,9 +28,34 @@ public class Instancia {
 	public Collection<Arbitro> getArbitros() {
 		return arbitros.values();
 	}
+	public void generarJSON (String archivo) {
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		String json = gson.toJson(this);
+		try {
+			FileWriter writer = new FileWriter(archivo);
+			writer.write(json);
+			writer.close();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
 	
 	public Arbitro getArbitroNumero(int key) {
 		return this.arbitros.get(key);
+	}
+	
+	public static Instancia leerJSON(String archivo) {
+		Gson gson = new Gson();
+		Instancia ret = null;
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(archivo));
+			ret = gson.fromJson(br, Instancia.class);
+		}
+		catch (Exception e){
+			e.printStackTrace();
+		}
+		return ret;
 	}
 	
 	@Override

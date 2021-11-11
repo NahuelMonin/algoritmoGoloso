@@ -24,7 +24,7 @@ public class Solver {
 				partidoActual.setArbitro(seleccionado);
 			}
 		}
-
+		
 	}
 
 	private Arbitro buscarCandidato(Partido partido, Collection<Arbitro> arbitrosDisponibles) {

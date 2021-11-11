@@ -9,14 +9,7 @@ import javax.swing.JTextPane;
 
 
 import arbitraje.*;
-import data.*;
-
-
 import java.awt.Font;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -30,7 +23,6 @@ public class Interfaz {
 	
 	private Instancia torneo;
 	private JFrame frmSeleccinAutomatizadaDe;
-	private Lectura leerArchivo;
 	private Solver solucion;
 	
 	/**
@@ -60,13 +52,10 @@ public class Interfaz {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+		
 		crearTorneo();
-		try {
-			escribirCalendario();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		torneo.generarJSON("torneo.JSON");
+	
 		frmSeleccinAutomatizadaDe = new JFrame();
 		frmSeleccinAutomatizadaDe.setIconImage(Toolkit.getDefaultToolkit().getImage("src\\icono.png"));
 		frmSeleccinAutomatizadaDe.setResizable(false);
@@ -97,8 +86,8 @@ public class Interfaz {
 		torneoOriginal.setEditable(false);
 		torneoOriginal.setBounds(10, 36, 240, 485);
 		frmSeleccinAutomatizadaDe.getContentPane().add(torneoOriginal);
-		leerArchivo = new Lectura ();
-		torneoOriginal.setText(leerArchivo.getCalendario());
+		
+		torneoOriginal.setText(Instancia.leerJSON("torneo.JSON").toString());
 		
 		
 		JTextPane despuesDelAlgoritmo = new JTextPane();
@@ -111,37 +100,47 @@ public class Interfaz {
 		calendarioConNombres.setBounds(538, 36, 259, 485);
 		frmSeleccinAutomatizadaDe.getContentPane().add(calendarioConNombres);
 		
+		//hasta qe no se realiza la asignacion de arbitros, no se habilita la consulta de apellidos
+		JButton solicitarApellidos = new JButton("Asignar Apellidos");
+		solicitarApellidos.setBounds(622, 532, 134, 23);
+		frmSeleccinAutomatizadaDe.getContentPane().add(solicitarApellidos);
+
 		JButton asignarArbitros = new JButton("Asignar \u00C1rbitros");
 		asignarArbitros.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				solucion = new Solver (torneo);
+				solucion = new Solver (Instancia.leerJSON("torneo.JSON"));
 				solucion.asignarArbitros();
-				despuesDelAlgoritmo.setText(solucion.toString());
-				
+				solucion.getInstancia().generarJSON("torneo.JSON");
+				torneo = solucion.getInstancia();
+				despuesDelAlgoritmo.setText(Instancia.leerJSON("torneo.JSON").toString());
+				//luego de realizar el algoritmo se habilita el boton para consultar los apellidos
+				habilitarSolicitudDeApellidos(calendarioConNombres, solicitarApellidos);
 			}
 		});
 		asignarArbitros.setBounds(340, 532, 133, 23);
 		frmSeleccinAutomatizadaDe.getContentPane().add(asignarArbitros);
 		
-		JButton btnNewButton_2 = new JButton("Asignar Apellidos");
-		btnNewButton_2.addActionListener(new ActionListener() {
+
+
+
+		
+	}
+	private void habilitarSolicitudDeApellidos(JTextPane calendarioConNombres, JButton solicitarApellidos) {
+		solicitarApellidos.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+
 				for (Arbitro arbitro : torneo.getArbitros()) {
 					arbitro.setApellido(JOptionPane.showInputDialog("Ingrese el nombre: "));
 				}
-				calendarioConNombres.setText(solucion.toString());
+				torneo.generarJSON("torneo.JSON");
+				calendarioConNombres.setText(Instancia.leerJSON("torneo.JSON").toString());
 				
 			}
 		});
-		btnNewButton_2.setBounds(622, 532, 134, 23);
-		frmSeleccinAutomatizadaDe.getContentPane().add(btnNewButton_2);
-		
 	}
-	
-	
 	public void crearTorneo () {
-	
-		Equipo[] equipos = new Equipo[6];
+		
+		Equipo [] equipos = new Equipo[6];
 		equipos[0] = new Equipo("River Plate", 0);
 		equipos[1] = new Equipo("Boca Jrs", 1);
 		equipos[2] = new Equipo("Independiente", 2);
@@ -149,7 +148,7 @@ public class Interfaz {
 		equipos[4] = new Equipo("San Lorenzo", 4);
 		equipos[5] = new Equipo("Huracan", 5);
 		
-		HashMap<Integer, Arbitro> arbitros = new HashMap<Integer, Arbitro>();
+		HashMap <Integer, Arbitro> arbitros = new HashMap<Integer, Arbitro>();
 		arbitros.put(0, new Arbitro(1,6));
 		arbitros.put(1, new Arbitro(2,6));
 		arbitros.put(2, new Arbitro(3,6));
@@ -185,22 +184,7 @@ public class Interfaz {
 		fechasTorneo.add(new FechaTorneo (3, partidosFecha3 ));
 		fechasTorneo.add(new FechaTorneo (4, partidosFecha4 ));
 		fechasTorneo.add(new FechaTorneo (5, partidosFecha5 ));
-		
 		torneo = new Instancia (fechasTorneo, arbitros);
-		
-	}
-	
-
-	private void escribirCalendario () throws IOException{
-		try {
-			FileOutputStream fos = new FileOutputStream("Calendario.txt");
-			OutputStreamWriter out = new OutputStreamWriter(fos);
-			out.write(torneo.toString());
-			
-			out.close();
-		
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
+				
 	}
 }

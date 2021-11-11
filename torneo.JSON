@@ -1,0 +1,220 @@
+{
+  "fechasTorneo": [
+    {
+      "numFecha": 1,
+      "partidos": [
+        {
+          "equipoA": {
+            "nombre": "River Plate",
+            "codigo": 0
+          },
+          "equipoB": {
+            "nombre": "Boca Jrs",
+            "codigo": 1
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "Independiente",
+            "codigo": 2
+          },
+          "equipoB": {
+            "nombre": "Racing",
+            "codigo": 3
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "San Lorenzo",
+            "codigo": 4
+          },
+          "equipoB": {
+            "nombre": "Huracan",
+            "codigo": 5
+          }
+        }
+      ]
+    },
+    {
+      "numFecha": 2,
+      "partidos": [
+        {
+          "equipoA": {
+            "nombre": "River Plate",
+            "codigo": 0
+          },
+          "equipoB": {
+            "nombre": "Independiente",
+            "codigo": 2
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "San Lorenzo",
+            "codigo": 4
+          },
+          "equipoB": {
+            "nombre": "Boca Jrs",
+            "codigo": 1
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "Huracan",
+            "codigo": 5
+          },
+          "equipoB": {
+            "nombre": "Racing",
+            "codigo": 3
+          }
+        }
+      ]
+    },
+    {
+      "numFecha": 3,
+      "partidos": [
+        {
+          "equipoA": {
+            "nombre": "River Plate",
+            "codigo": 0
+          },
+          "equipoB": {
+            "nombre": "San Lorenzo",
+            "codigo": 4
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "Huracan",
+            "codigo": 5
+          },
+          "equipoB": {
+            "nombre": "Independiente",
+            "codigo": 2
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "Racing",
+            "codigo": 3
+          },
+          "equipoB": {
+            "nombre": "Boca Jrs",
+            "codigo": 1
+          }
+        }
+      ]
+    },
+    {
+      "numFecha": 4,
+      "partidos": [
+        {
+          "equipoA": {
+            "nombre": "River Plate",
+            "codigo": 0
+          },
+          "equipoB": {
+            "nombre": "Huracan",
+            "codigo": 5
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "Racing",
+            "codigo": 3
+          },
+          "equipoB": {
+            "nombre": "San Lorenzo",
+            "codigo": 4
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "Boca Jrs",
+            "codigo": 1
+          },
+          "equipoB": {
+            "nombre": "Independiente",
+            "codigo": 2
+          }
+        }
+      ]
+    },
+    {
+      "numFecha": 5,
+      "partidos": [
+        {
+          "equipoA": {
+            "nombre": "River Plate",
+            "codigo": 0
+          },
+          "equipoB": {
+            "nombre": "Racing",
+            "codigo": 3
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "Boca Jrs",
+            "codigo": 1
+          },
+          "equipoB": {
+            "nombre": "Huracan",
+            "codigo": 5
+          }
+        },
+        {
+          "equipoA": {
+            "nombre": "Independiente",
+            "codigo": 2
+          },
+          "equipoB": {
+            "nombre": "San Lorenzo",
+            "codigo": 4
+          }
+        }
+      ]
+    }
+  ],
+  "arbitros": {
+    "0": {
+      "codigo": 1,
+      "equiposDirigidos": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "disponible": true,
+      "apellido": ""
+    },
+    "1": {
+      "codigo": 2,
+      "equiposDirigidos": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "disponible": true,
+      "apellido": ""
+    },
+    "2": {
+      "codigo": 3,
+      "equiposDirigidos": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "disponible": true,
+      "apellido": ""
+    }
+  }
+}

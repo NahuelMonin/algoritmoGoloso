@@ -1,6 +1,10 @@
 package arbitraje;
 
-public class Partido {
+import java.io.Serializable;
+
+public class Partido implements Serializable{
+
+	private static final long serialVersionUID = 1L;
 	private Equipo equipoA;
 	private Equipo equipoB;
 	private Arbitro arbitro;
