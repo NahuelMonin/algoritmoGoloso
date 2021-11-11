@@ -47,11 +47,18 @@ public class SolverTest {
 	}
 	@Test
 	public void asignarArbitroTest() {
+		
+		int[] arbitro1Esperado = new int[]{3,1,1,1};
+		int[] arbitro2Esperado = new int[]{0,2,2,2};
 		Instancia torneo = crearEjemplo();
 		Solver solucion = new Solver(torneo);
 		solucion.asignarArbitros();
-		//solucion.getInstancia().g
 		
+		int[] arbitro1Obtenido = solucion.getInstancia().getArbitroNumero(1).getEquiposDirigidos();
+		int[] arbitro2Obtenido = solucion.getInstancia().getArbitroNumero(2).getEquiposDirigidos();
+		
+		assertTrue(Assert.equals(arbitro1Esperado, arbitro1Obtenido));
+		assertTrue(Assert.equals(arbitro2Esperado, arbitro2Obtenido));
 	}
 
 }

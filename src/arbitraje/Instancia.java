@@ -7,12 +7,10 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 public class Instancia implements Serializable{
-	
 
 	private static final long serialVersionUID = 1L;
 	private ArrayList<FechaTorneo> fechasTorneo;
@@ -43,6 +41,10 @@ public class Instancia implements Serializable{
 		}
 	}
 	
+	public Arbitro getArbitroNumero(int key) {
+		return this.arbitros.get(key);
+	}
+	
 	public static Instancia leerJSON(String archivo) {
 		Gson gson = new Gson();
 		Instancia ret = null;
@@ -56,7 +58,6 @@ public class Instancia implements Serializable{
 		return ret;
 	}
 	
-
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
