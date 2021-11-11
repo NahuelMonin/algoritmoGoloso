@@ -140,18 +140,9 @@ public class Interfaz {
 	}
 	public void crearTorneo () {
 		
-		Equipo [] equipos = new Equipo[6];
-		equipos[0] = new Equipo("River Plate", 0);
-		equipos[1] = new Equipo("Boca Jrs", 1);
-		equipos[2] = new Equipo("Independiente", 2);
-		equipos[3] = new Equipo("Racing", 3);
-		equipos[4] = new Equipo("San Lorenzo", 4);
-		equipos[5] = new Equipo("Huracan", 5);
+		Equipo[] equipos = agregarEquipos();
 		
-		HashMap <Integer, Arbitro> arbitros = new HashMap<Integer, Arbitro>();
-		arbitros.put(0, new Arbitro(1,6));
-		arbitros.put(1, new Arbitro(2,6));
-		arbitros.put(2, new Arbitro(3,6));
+		HashMap<Integer, Arbitro> arbitros = agregarArbitros();
 		
 		ArrayList<Partido> partidosFecha1 = new ArrayList<Partido>();
 		partidosFecha1.add(new Partido(equipos[0], equipos[1]));
@@ -184,7 +175,28 @@ public class Interfaz {
 		fechasTorneo.add(new FechaTorneo (3, partidosFecha3 ));
 		fechasTorneo.add(new FechaTorneo (4, partidosFecha4 ));
 		fechasTorneo.add(new FechaTorneo (5, partidosFecha5 ));
+		
 		torneo = new Instancia (fechasTorneo, arbitros);
 				
+	}
+
+	private HashMap<Integer, Arbitro> agregarArbitros() {
+		HashMap <Integer, Arbitro> arbitros = new HashMap<Integer, Arbitro>();
+		arbitros.put(0, new Arbitro(1,6));
+		arbitros.put(1, new Arbitro(2,6));
+		arbitros.put(2, new Arbitro(3,6));
+		return arbitros;
+	}
+
+	private Equipo[] agregarEquipos() {
+		
+		Equipo [] equipos = new Equipo[6];
+		equipos[0] = new Equipo("River Plate", 0);
+		equipos[1] = new Equipo("Boca Jrs", 1);
+		equipos[2] = new Equipo("Independiente", 2);
+		equipos[3] = new Equipo("Racing", 3);
+		equipos[4] = new Equipo("San Lorenzo", 4);
+		equipos[5] = new Equipo("Huracan", 5);
+		return equipos;
 	}
 }
