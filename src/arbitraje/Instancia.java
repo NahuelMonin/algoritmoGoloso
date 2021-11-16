@@ -3,16 +3,15 @@ package arbitraje;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-public class Instancia implements Serializable{
+public class Instancia {
 
-	private static final long serialVersionUID = 1L;
+
 	private ArrayList<FechaTorneo> fechasTorneo;
 	private HashMap<Integer, Arbitro> arbitros;
 	

@@ -1,10 +1,7 @@
 package arbitraje;
 
-import java.io.Serializable;
+public class Partido {
 
-public class Partido implements Serializable{
-
-	private static final long serialVersionUID = 1L;
 	private Equipo equipoA;
 	private Equipo equipoB;
 	private Arbitro arbitro;
@@ -36,7 +33,10 @@ public class Partido implements Serializable{
 		StringBuilder sb = new StringBuilder();
 		
 		sb.append(equipoA).append(" - ").append(equipoB).append(" // Árbitro: ");
-		sb.append(arbitro);
+		if(arbitro != null)
+			sb.append(arbitro);
+		else
+			sb.append("No fijado");
 		return sb.toString();
 	}
 }

@@ -60,31 +60,31 @@ public class Interfaz {
 		frmSeleccinAutomatizadaDe.setIconImage(Toolkit.getDefaultToolkit().getImage("src\\icono.png"));
 		frmSeleccinAutomatizadaDe.setResizable(false);
 		frmSeleccinAutomatizadaDe.setTitle("Selecci\u00F3n automatizada de \u00E1rbitros.");
-		frmSeleccinAutomatizadaDe.setBounds(100, 100, 835, 667);
+		frmSeleccinAutomatizadaDe.setBounds(100, 100, 851, 599);
 		frmSeleccinAutomatizadaDe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmSeleccinAutomatizadaDe.getContentPane().setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Calendario original");
 		lblNewLabel.setForeground(Color.BLACK);
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblNewLabel.setBounds(60, 11, 125, 14);
+		lblNewLabel.setBounds(73, 11, 125, 14);
 		frmSeleccinAutomatizadaDe.getContentPane().add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Asignacion de \u00E1rbitros");
 		lblNewLabel_1.setForeground(Color.BLACK);
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblNewLabel_1.setBounds(317, 11, 149, 14);
+		lblNewLabel_1.setBounds(338, 11, 149, 14);
 		frmSeleccinAutomatizadaDe.getContentPane().add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Asignacion de Nombres");
 		lblNewLabel_2.setForeground(Color.BLACK);
 		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblNewLabel_2.setBounds(607, 11, 149, 14);
+		lblNewLabel_2.setBounds(610, 11, 149, 14);
 		frmSeleccinAutomatizadaDe.getContentPane().add(lblNewLabel_2);
 		
 		JTextPane torneoOriginal = new JTextPane();
 		torneoOriginal.setEditable(false);
-		torneoOriginal.setBounds(10, 36, 240, 485);
+		torneoOriginal.setBounds(10, 36, 259, 475);
 		frmSeleccinAutomatizadaDe.getContentPane().add(torneoOriginal);
 		
 		torneoOriginal.setText(Instancia.leerJSON("torneo.JSON").toString());
@@ -92,17 +92,17 @@ public class Interfaz {
 		
 		JTextPane despuesDelAlgoritmo = new JTextPane();
 		despuesDelAlgoritmo.setEditable(false);
-		despuesDelAlgoritmo.setBounds(270, 36, 240, 485);
+		despuesDelAlgoritmo.setBounds(279, 36, 259, 475);
 		frmSeleccinAutomatizadaDe.getContentPane().add(despuesDelAlgoritmo);
 		
 		JTextPane calendarioConNombres = new JTextPane();
 		calendarioConNombres.setEditable(false);
-		calendarioConNombres.setBounds(538, 36, 259, 485);
+		calendarioConNombres.setBounds(548, 36, 259, 475);
 		frmSeleccinAutomatizadaDe.getContentPane().add(calendarioConNombres);
 		
 		//hasta qe no se realiza la asignacion de arbitros, no se habilita la consulta de apellidos
 		JButton solicitarApellidos = new JButton("Asignar Apellidos");
-		solicitarApellidos.setBounds(622, 532, 134, 23);
+		solicitarApellidos.setBounds(610, 522, 149, 23);
 		frmSeleccinAutomatizadaDe.getContentPane().add(solicitarApellidos);
 
 		JButton asignarArbitros = new JButton("Asignar \u00C1rbitros");
@@ -117,7 +117,7 @@ public class Interfaz {
 				habilitarSolicitudDeApellidos(calendarioConNombres, solicitarApellidos);
 			}
 		});
-		asignarArbitros.setBounds(340, 532, 133, 23);
+		asignarArbitros.setBounds(338, 522, 149, 23);
 		frmSeleccinAutomatizadaDe.getContentPane().add(asignarArbitros);
 		
 
